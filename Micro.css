@@ -1,7 +1,11 @@
+html {
+scroll-behavior: smooth;
+}
+
 body {
-font-family: Arial;
+font-family: Arial, sans-serif;
 margin: 0;
-background-color: #f8f9fc;
+background-color: #eef2ff;
 color: #222;
 }
 
@@ -10,31 +14,39 @@ background-color: #111827;
 color: white;
 text-align: center;
 padding: 25px;
-font-family : Agency FB;
-font-size : 60px;
+position: sticky;
+top: 0;
+z-index: 10;
 }
 
 header h1 {
 margin: 0;
-font-size: 36px;
+font-family: "Agency FB", Arial, sans-serif;
+font-size: 48px;
+animation: title 2s;
 }
 
 header p {
 font-size: 16px;
 color: #d1d5db;
+margin-bottom: 0;
 }
 
 nav {
 background-color: white;
 text-align: center;
 padding: 15px;
-border-bottom: 1px solid #ddd;
+position: sticky;
+top: 116px;
+z-index: 9;
+box-shadow: 0 2px 6px #ccc;
 }
 
 nav a {
 color: #333;
 text-decoration: none;
 margin: 15px;
+font-weight: bold;
 }
 
 nav a:hover {
@@ -54,11 +66,21 @@ main p {
 font-size: 17px;
 }
 
+#quizzes {
+background-color: white;
+padding: 20px;
+margin: 20px auto;
+max-width: 900px;
+border-left: 6px solid #6d28d9;
+box-shadow: 0 3px 10px #ccc;
+}
+
 table {
 margin: 25px auto;
 border-collapse: collapse;
 background-color: white;
-box-shadow: 0 2px 8px #ddd;
+box-shadow: 0 3px 10px #ccc;
+animation: appear 1s;
 }
 
 th {
@@ -71,19 +93,20 @@ padding: 14px;
 border: 1px solid #ddd;
 }
 
+tr:hover {
+background-color: #f3e8ff;
+}
+
 td a {
-color: #6d28d9;
+background-color: #6d28d9;
+color: white;
+padding: 8px 14px;
 text-decoration: none;
+border-radius: 4px;
 }
 
 td a:hover {
-text-decoration: underline;
-}
-
-ul {
-display: inline-block;
-text-align: left;
-line-height: 2;
+background-color: #4c1d95;
 }
 
 main > p a {
@@ -95,13 +118,54 @@ border-radius: 5px;
 }
 
 main > p a:hover {
-background-color: #5b21b6;
+background-color: #4c1d95;
+}
+
+ul {
+display: inline-block;
+text-align: left;
+line-height: 2;
+background-color: white;
+padding: 20px 40px;
+box-shadow: 0 3px 10px #ccc;
+border-left: 6px solid #6d28d9;
+}
+
+main > h2:not(#quizzes) {
+background-color: white;
+padding: 20px;
+margin: 30px auto 0;
+max-width: 500px;
+border-left: 6px solid #6d28d9;
+box-shadow: 0 3px 10px #ccc;
 }
 
 marquee {
 background-color: #111827;
 color: white;
 text-align: center;
-padding: 15px;
+padding: 10px;
 margin-top: 20px;
+}
+
+@keyframes title {
+from {
+opacity: 0;
+transform: translateY(-20px);
+}
+
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+@keyframes appear {
+from {
+opacity: 0;
+}
+
+to {
+opacity: 1;
+}
 }
