@@ -49,3 +49,7 @@ function checkQuiz()
     document.getElementById("result").innerHTML =
         "<b>Your Score : " + score + " / 10</b>";
 }
+
+function reset(){
+    location.reload();
+}
