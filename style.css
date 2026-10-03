@@ -59,6 +59,12 @@ width : 90%;
 }
 
 a{
-color: #4b0082;
-text-decoration: none;
+color : #4b0082;
+text-decoration : none;
+}
+
+#buttons{
+display : flex;
+justify-content : center;
+gap : 10px;
 }
