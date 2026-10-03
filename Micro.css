@@ -1,107 +1,107 @@
 body {
-font-family: Arial;
-margin: 0;
-background-color: #f8f9fc;
-color: #222;
+    font-family: Arial;
+    margin: 0;
+    background-color: ghostwhite;
+    color: #222;
 }
 
 header {
-background-color: #111827;
-color: white;
-text-align: center;
-padding: 25px;
-font-family : Agency FB;
-font-size : 60px;
+    background-color: midnightblue;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    font-family: Agency FB;
+    font-size: 60px;
 }
 
 header h1 {
-margin: 0;
-font-size: 36px;
+    margin: 0;
+    font-size: 36px;
 }
 
 header p {
-font-size: 16px;
-color: #d1d5db;
+    font-size: 16px;
+    color: lightgray;
 }
 
 nav {
-background-color: white;
-text-align: center;
-padding: 15px;
-border-bottom: 1px solid #ddd;
+    background-color: white;
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
 }
 
 nav a {
-color: #333;
-text-decoration: none;
-margin: 15px;
+    color: #333;
+    text-decoration: none;
+    margin: 15px;
 }
 
 nav a:hover {
-color: #6d28d9;
+    color: indigo;
 }
 
 main {
-text-align: center;
-padding: 35px;
+    text-align: center;
+    padding: 35px;
 }
 
 main h2 {
-color: #111827;
+    color: midnightblue;
 }
 
 main p {
-font-size: 17px;
+    font-size: 17px;
 }
 
 table {
-margin: 25px auto;
-border-collapse: collapse;
-background-color: white;
-box-shadow: 0 2px 8px #ddd;
+    margin: 25px auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 2px 8px #ddd;
 }
 
 th {
-background-color: #6d28d9;
-color: white;
+    background-color: indigo;
+    color: white;
 }
 
 th, td {
-padding: 14px;
-border: 1px solid #ddd;
+    padding: 14px;
+    border: 1px solid #ddd;
 }
 
 td a {
-color: #6d28d9;
-text-decoration: none;
+    color: indigo;
+    text-decoration: none;
 }
 
 td a:hover {
-text-decoration: underline;
+    text-decoration: underline;
 }
 
 ul {
-display: inline-block;
-text-align: left;
-line-height: 2;
+    display: inline-block;
+    text-align: left;
+    line-height: 2;
 }
 
 main > p a {
-background-color: #6d28d9;
-color: white;
-padding: 12px 25px;
-text-decoration: none;
-border-radius: 5px;
+    background-color: indigo;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
 main > p a:hover {
-background-color: #5b21b6;
+    background-color: darkslateblue;
 }
 
 marquee {
-background-color: #111827;
-color: white;
-text-align: center;
-padding: 15px;
-margin-top: 20px;
+    background-color: midnightblue;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
 }
