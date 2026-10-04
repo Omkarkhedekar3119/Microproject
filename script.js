@@ -50,6 +50,11 @@ function checkQuiz()
         "<b>Your Score : " + score + " / 10</b>";
 }
 
-function reset(){
-    document.getElementById("quiz").reset();
-}
+function resetQuiz()
+{
+let buttons = document.querySelectorAll("input[type='radio']");
+
+for(let i = 0; i < buttons.length; i++)
+{
+buttons[i].checked = false;
+}}
