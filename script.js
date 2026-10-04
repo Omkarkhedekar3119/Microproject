@@ -51,5 +51,5 @@ function checkQuiz()
 }
 
 function reset(){
-    location.reload();
+    document.getElementById("quiz").reset();
 }
