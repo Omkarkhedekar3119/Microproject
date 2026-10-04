@@ -28,6 +28,7 @@ background-color: #111827;
 color: white;
 padding: 10px 20px;
 border-radius: 5px;
+animation : title 1.5s;
 }
 
 h2{
@@ -64,6 +65,18 @@ border : none;
 border : 2px solid red;
 width : 60%;
 margin-bottom : 40px;
+}
+
+@keyframes title{
+from{
+opacity : 0;
+transform : translateY(-15px);
+}
+
+to{
+opacity : 1;
+transform : translateY(0);
+}
 }
 
 </style>
